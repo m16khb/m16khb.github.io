@@ -1,0 +1,9 @@
+.announcement-writing-wrapper{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 50px;
+    width: 800px;
+    height: 450px;
+}

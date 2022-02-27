@@ -1,0 +1,14 @@
+.find-pw-wrapper {
+    width: 50%;
+    height: 350px;
+    margin: auto;
+    padding-top: 50px;
+}
+
+
+.feedback-name,
+.feedback-id,
+.feedback-telephone,
+.feedback-check {
+    display: none;
+}

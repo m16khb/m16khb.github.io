@@ -1,0 +1,387 @@
+/* Preferences start */
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.container{
+    height: 1200px;
+    position: relative;
+}
+
+.checking-border {
+    border: 2px solid black;
+}
+
+.color-white {
+    color: white;
+}
+
+.color-black {
+    color: black;
+}
+
+.text-decoration-none{
+    text-decoration: none;
+}
+
+.font-noto{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.header{
+    margin-top: 20px;
+}
+
+.title {
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+nav{
+    height: 150px !important;
+}
+
+.fix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    animation: down 0.5s ease;
+    z-index: 10;
+}
+
+
+/* Preferences end */
+
+/* menu start */
+.menu{
+    display: flex;
+    background-color: white;
+    width: 100%;
+    height: 150px;
+}
+
+.menu-item{
+    width: 15%;
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+/* vlidate의 z-index가 꽤 높은 듯 menu-hidden을 재조정 함 */
+.hidden-menu{
+    background-color: white;
+    position: absolute;
+    bottom: -200px;
+    left: 0;
+    width: 800px;
+    height: 200px;
+    z-index: 10;
+    visibility: hidden;
+}
+
+.center .hidden-menu{
+    background-color: white;
+    position: absolute;
+    bottom: -200px;
+    left: -300px;
+    width: 800px;
+    height: 200px;
+    z-index: 10;
+    visibility: hidden;
+}
+
+.right .hidden-menu{
+    background-color: white;
+    position: absolute;
+    bottom: -200px;
+    left: -600px;
+    width: 800px;
+    height: 200px;
+    z-index: 10;
+    visibility: hidden;
+}
+
+.menu-item:hover .hidden-menu{
+    visibility: visible;
+    border-top: 3px solid rgba(125,125,125,0.5);
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.menu-all:hover{
+    cursor: pointer;
+}
+
+.menu ul{
+    padding-left: 16px;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    margin: 0px;
+}
+
+.menu ul li{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu ul li > a{
+    text-decoration: none;
+}
+
+.inner-menu{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+}
+
+.inner-menu-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.inner-menu ul li{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.inner-menu ul li > a{
+    text-decoration: none;
+}
+
+.menu-all-line{
+    width: 100%;
+    height: 10px;
+    border-top: 1px solid gray;
+}
+
+.menu-all{
+    width: 30px;
+    padding-top: 10px;
+}
+
+.hidden-all-menu{
+    background-color: white;
+    position: absolute;
+    bottom: -200px;
+    left: 0;
+    width: 800px;
+    height: 200px;
+    z-index: 10;
+    visibility: hidden;
+}
+
+.menu-all:hover .hidden-all-menu{
+    visibility: visible;
+    border-top: 3px solid rgba(125,125,125,0.5);
+    background-color: rgba(255, 255, 255, 0.8);
+    cursor:default;
+}
+
+/* menu end */
+
+/* main-advertise start */
+.main-advertise-wrapper{
+    margin-top: 30px;
+    width: 100%;
+    height:600px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-advertise-content{
+    width: 80%;
+    background-image: url(../images/Justdoit.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/* main-advertise end */
+
+/* swipper-start */
+.article *{
+    position: relative;
+    z-index: 1;
+}
+
+.swipper{
+
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    padding-top:40px;
+}
+
+.swipper .arrow-btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.arrow-btn button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.swipper-item{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.swipper-item img{
+    width: 80%;
+}
+
+.swipper-item:hover .swipper-item-overlay{
+    cursor: pointer;
+    background-color: rgba(50,50,50,0.7);
+    opacity: 1;
+    transition: all 1s;
+}
+
+.swipper-item-overlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    background-color: rgba(50,50,50,0);
+}
+
+/* swipper-end */
+
+/* footer start */
+
+.footer-wrapper{
+    width: 100%;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border-top: 0.1px solid rgba(50, 50, 50, 0.3);
+}
+
+.footer-customer-center{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-telephone{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.footer-account-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-account-info span{
+    padding: 0px 36px 6px 12px;
+}
+
+.footer-map{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.footer-map #map{
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 80%;
+    height: 150px;
+}
+
+.footer-return-exchange{
+    display: flex;
+    flex-direction:column;
+}
+
+.footer-return-icon{
+    display: flex;
+    font-size: 30px;
+    justify-content:space-evenly;
+    margin-right: 30px;
+}
+
+.footer-return-icon a:link {text-decoration: none; color: inherit;}
+.footer-return-icon a:visited {text-decoration: none; color: inherit;}
+.footer-return-icon a:active {text-decoration: none; color: inherit;}
+.footer-return-icon a:hover {text-decoration: none; color: inherit;}
+
+/* footer end */
+
+@media screen and (max-width: 1400px) {
+    .main-advertise-wrapper{
+        height:500px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .main-advertise-wrapper{
+        height:400px;
+    }
+
+    .footer-wrapper{
+        width: 100%;
+        padding: 20px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        border-top: 0.1px solid rgba(50, 50, 50, 0.3);
+    }
+
+    .footer-account-info span{
+        padding: 0px 0px 0px 0px;
+    }
+    
+    .footer-map{
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+    }
+
+    .footer-map #map{
+        margin-top: 0px;
+        margin-right: 0px;
+        width: 100%;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .main-advertise-wrapper{
+        height:320px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .main-advertise-wrapper{
+        height:250px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .main-advertise-wrapper{
+        height:150px;
+    }
+}

@@ -1,0 +1,14 @@
+.mypage-wrapper {
+    width: 50%;
+    height: 600px;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.feedback-current-pw,
+.feedback-pw,
+.feedback-pwcheck,
+.feedback-email,
+.feedback-address {
+    display: none;
+}

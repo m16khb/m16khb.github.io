@@ -1,0 +1,15 @@
+.sign-up-wrapper {
+    width: 50%;
+    height: 600px;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.feedback-name,
+.feedback-id,
+.feedback-pw,
+.feedback-pwcheck,
+.feedback-email,
+.feedback-address {
+    display: none;
+}

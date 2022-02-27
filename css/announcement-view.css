@@ -1,0 +1,33 @@
+.announcement-view-wrapper{
+    height: 700px;
+    padding: 30px;
+}
+
+.announcement-view-wrapper *{ 
+    padding: 10px;
+}
+
+.announcement-view-data{
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    grid-template-rows: 1fr 1fr;
+    padding-bottom: 0px;
+}
+
+.announcement-view-data-extra{
+    display: flex;
+    align-items: center;
+    padding-top: 0px;
+}
+
+.announcement-view-data-extra div{
+    padding-right: 30px;
+}
+
+.announcement-view-content{
+    font-size: 30px;
+}
+
+.announcement-view-comment-wrapper{
+    background-color: rgba(100,100,100,0.1);
+}

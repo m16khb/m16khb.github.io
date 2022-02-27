@@ -1,0 +1,11 @@
+.purchase-wrapper {
+    width: 50%;
+    margin: auto;
+}
+
+.feedback-take-name,
+.feedback-address,
+.feedback-telephone,
+.feedback-email{
+    display: none;
+}

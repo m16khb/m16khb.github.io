@@ -1,0 +1,13 @@
+.find-id-wrapper {
+    width: 50%;
+    height: 350px;
+    margin: auto;
+    padding-top: 50px;
+}
+
+
+.feedback-name,
+.feedback-telephone,
+.feedback-check {
+    display: none;
+}

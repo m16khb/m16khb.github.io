@@ -1,0 +1,15 @@
+.shopping-cart-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.shopping-cart-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.shopping-cart-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
